@@ -6,6 +6,7 @@ import { MiniMapaComponent } from './components/mini-mapa/mini-mapa.component';
 import { FullScrenComponent } from './pages/full-scren/full-scren.component';
 import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
 import { PropiedadesComponent } from './pages/propiedades/propiedades.component';
+import { MarcadoresComponent } from './pages/marcadores/marcadores.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PropiedadesComponent } from './pages/propiedades/propiedades.component'
     MiniMapaComponent,
     FullScrenComponent,
     ZoomRangeComponent,
-    PropiedadesComponent
+    PropiedadesComponent,
+    MarcadoresComponent
   ],
   imports: [
     CommonModule,
