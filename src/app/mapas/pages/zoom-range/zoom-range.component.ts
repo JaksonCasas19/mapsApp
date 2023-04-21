@@ -41,12 +41,9 @@ export class ZoomRangeComponent implements AfterViewInit {
     });
   }
   zoomOut(): void {
-    console.log('zoomOut', this.divMapa);
-    console.log('zoomOut');
     this.mapa.zoomOut();
   }
   zoomIn(): void {
-    console.log('zoomIn');
     this.mapa.zoomIn();
   }
 }
