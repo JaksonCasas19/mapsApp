@@ -26,9 +26,12 @@ export class MarcadoresComponent implements AfterViewInit {
       center: this.center,
       zoom: this.zoomLevel,
     });
-
+    const markerHtml: HTMLElement = document.createElement('div');
+    markerHtml.innerHTML = 'Hola Mundo';
     //Agregar marcador
-    const marker = new mapboxgl.Marker()
+    new mapboxgl.Marker({
+      element: markerHtml,
+    })
       .setLngLat(this.center)
       .addTo(this.mapa);
   }
