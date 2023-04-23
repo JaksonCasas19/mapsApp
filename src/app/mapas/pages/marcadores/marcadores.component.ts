@@ -60,8 +60,8 @@ export class MarcadoresComponent implements AfterViewInit {
       .setLngLat(this.center)
       .addTo(this.mapa);
   }
-  irMarcador(eve: any): void {
-    const { lng, lat } = eve.marker._lngLat;
+  irMarcador(eve: mapboxgl.Marker): void {
+    const { lng, lat } = eve.getLngLat();
     console.log(lng, lat);
     this.mapa.flyTo({
       center: [lng, lat],
