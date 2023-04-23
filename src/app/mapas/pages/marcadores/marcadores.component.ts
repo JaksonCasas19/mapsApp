@@ -82,4 +82,7 @@ export class MarcadoresComponent implements AfterViewInit {
       marker: nuevoMarcador,
     });
   }
+  guardarMarcadoresLocalStorage(): void {}
+
+  leerLocalStorage(): void {}
 }
