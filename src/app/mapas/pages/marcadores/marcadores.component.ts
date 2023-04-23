@@ -68,6 +68,7 @@ export class MarcadoresComponent implements AfterViewInit {
     });
   }
   agregarMarcador(): void {
+    //Para obtener colores random
     const color = '#xxxxxx'.replace(/x/g, (y) =>
       ((Math.random() * 16) | 0).toString(16)
     );
