@@ -60,7 +60,13 @@ export class MarcadoresComponent implements AfterViewInit {
       .setLngLat(this.center)
       .addTo(this.mapa);
   }
-  irMarcador(): void {}
+  irMarcador(eve: any): void {
+    const { lng, lat } = eve.marker._lngLat;
+    console.log(lng, lat);
+    this.mapa.flyTo({
+      center: [lng, lat],
+    });
+  }
   agregarMarcador(): void {
     const color = '#xxxxxx'.replace(/x/g, (y) =>
       ((Math.random() * 16) | 0).toString(16)
