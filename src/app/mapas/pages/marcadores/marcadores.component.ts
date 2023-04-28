@@ -39,7 +39,6 @@ export class MarcadoresComponent implements AfterViewInit {
   mapa!: mapboxgl.Map;
   zoomLevel: number = 15;
   center: [number, number] = [-76.3873522392868, -13.077623610426357];
-
   //Arreglo de marcadores
   marcadores: MarcadorColor[] = [];
   @ViewChild('mapa') divMapa!: ElementRef;
@@ -128,6 +127,7 @@ export class MarcadoresComponent implements AfterViewInit {
     });
     console.log(lngLatArr);
   }
+  //Para borrar marcador
   borrarMarcador(i: number): void {
     this.marcadores[i].marker?.remove();
     this.marcadores.splice(i, 1);
