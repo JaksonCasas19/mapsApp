@@ -125,7 +125,6 @@ export class MarcadoresComponent implements AfterViewInit {
         this.guardarMarcadoresLocalStorage();
       });
     });
-    console.log(lngLatArr);
   }
   //Para borrar marcador
   borrarMarcador(i: number): void {
